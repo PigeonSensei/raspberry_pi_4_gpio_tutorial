@@ -51,8 +51,8 @@ int main(int argc, char **argv)
       digitalWrite(LED_PIN,LOW);
       a = 0;
     }
-    ros::spinOnce();
     loop_rate.sleep();
+    ros::spinOnce();
     if(input_return_key() == 27){
       digitalWrite(LED_PIN,LOW);
       return 0;
